@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Post by Month
+title: All the great science
 permalink: /monthview/
 active: archivebydate
 sitemap: false
