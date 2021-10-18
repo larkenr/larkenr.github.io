@@ -1,5 +1,6 @@
 ---
 layout: post
+Date: 2021 October 18
 title: October Goals
 ---
 
