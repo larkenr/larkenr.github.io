@@ -85,6 +85,51 @@ PCASamples(meth_filter)
 
 
 
-and when one includes all samples.
+and when one includes
+## all samples
 
 ![all](http://gannet.fish.washington.edu/seashell/snaps/2018_L18-adult-methylation____RStudio_Server_2021-11-05_09-35-34.png)
+
+
+note different file list
+
+```{r include=FALSE}
+file.list_all=list('../bg_data/12M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/13M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/16F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/19F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/22F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/23M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/29F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/31M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/35F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/36F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/39F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/3F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/41F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/44F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/48M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/50F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/52F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/53F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/54F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/59M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/64M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/6M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/76F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/77F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/7M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                '../bg_data/9M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam'
+)
+```
+and align
+
+
+```{r eval=FALSE, include=FALSE}
+myobj_all = processBismarkAln(location = file.list_all,
+  sample.id = list("12M","13M","16F","19F","22F","23M","29F","31M", "35F","36F","39F","3F","41F","44F","48M","50F","52F","53F","54F","59M","64M","6M","76F", "77F","7M","9M"),
+  assembly = "cv",
+  read.context="CpG",
+  mincov=2,
+  treatment = c(3,1,2,2,4,3,4,3,4,4,2,4,4,2,3,4,2,2,2,3,1,1,2,4,1,3))
+```
