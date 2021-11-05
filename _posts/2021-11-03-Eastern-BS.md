@@ -67,7 +67,7 @@ myobj_c = processBismarkAln(location = file.list_c,
   treatment = c(0,1,1,1,1,1,1,1,0,0,1,0))
 ```
 
-```{r message=FALSE, warning=FALSE}
+```
 filtered.myobj=filterByCoverage(myobj_c,lo.count=10,lo.perc=NULL,
                                       hi.count=NULL,hi.perc=98)
 
@@ -93,7 +93,7 @@ and when one includes
 
 note different file list
 
-```{r include=FALSE}
+```
 file.list_all=list('../bg_data/12M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
                 '../bg_data/13M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
                 '../bg_data/16F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
