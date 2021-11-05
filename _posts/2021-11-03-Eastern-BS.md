@@ -79,3 +79,12 @@ clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
 PCASamples(meth_filter)
 
 ```
+
+
+![con](http://gannet.fish.washington.edu/seashell/snaps/2018_L18-adult-methylation____RStudio_Server_2021-11-05_09-34-18.png)
+
+
+
+and when one includes all samples.
+
+![all](http://gannet.fish.washington.edu/seashell/snaps/2018_L18-adult-methylation____RStudio_Server_2021-11-05_09-35-34.png)
