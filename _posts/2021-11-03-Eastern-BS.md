@@ -7,6 +7,7 @@ tags: R, tidyverse, methylkit
 ---
 
 In an effort to couple DNA methylation data to complementary RNA-seq data we are looking at what the DNA methylation landscape, DML look like. Oysters were exposed to ocean acidification. Males and females were included.
+TLDR- Sex related methylation differences are FAR greater than any OA associated methylatuon differences. 
 
 *Sample information*
 
@@ -125,7 +126,7 @@ file.list_all=list('../bg_data/12M_R1_val_1_bismark_bt2_pe.deduplicated.sorted.b
 and align
 
 
-```{r eval=FALSE, include=FALSE}
+```
 myobj_all = processBismarkAln(location = file.list_all,
   sample.id = list("12M","13M","16F","19F","22F","23M","29F","31M", "35F","36F","39F","3F","41F","44F","48M","50F","52F","53F","54F","59M","64M","6M","76F", "77F","7M","9M"),
   assembly = "cv",
