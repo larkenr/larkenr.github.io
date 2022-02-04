@@ -213,7 +213,7 @@ xargs -I{} ${bismark_dir}/deduplicate_bismark \
 --samtools_path ${samtools} \
 --single \
 {}.bam
-``
+```
 
 This provides two files
 
