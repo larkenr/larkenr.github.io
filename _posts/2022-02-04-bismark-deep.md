@@ -305,12 +305,131 @@ C methylated in CHG context:	23.0%
 C methylated in CHH context:	32.6%
 ```
 
-Lets see if we can get simpler here. (Just dropping bedgraph we will be making ourselves later).
+---
+
+Big question now is why go on to genome wide report. Will create this and see what is different in coverage files.
+
 
 ```
-${bismark_dir}/bismark_methylation_extractor \
---multicore 28 \
---buffer_size 75% \
---samtools_path ${samtools} \
-*deduplicated.bam
+head 20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.deduplicated.bismark.cov
+NC_007175.2	49	49	50	1	1
+NC_007175.2	50	50	100	2	0
+NC_007175.2	51	51	100	2	0
+NC_007175.2	52	52	100	2	0
+NC_007175.2	88	88	100	4	0
+NC_007175.2	89	89	100	4	0
+NC_007175.2	147	147	100	2	0
+NC_007175.2	148	148	66.6666666666667	2	1
+NC_007175.2	193	193	66.6666666666667	4	2
+NC_007175.2	194	194	0	0	1
+```
+
+
+```
+head 20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.CpG_report.merged_CpG_evidence.cov
+NC_007175.2	49	50	75.000000	3	1
+NC_007175.2	51	52	100.000000	4	0
+NC_007175.2	88	89	100.000000	8	0
+NC_007175.2	147	148	80.000000	4	1
+NC_007175.2	193	194	57.142857	4	3
+NC_007175.2	246	247	40.000000	4	6
+NC_007175.2	257	258	25.000000	3	9
+NC_007175.2	264	265	27.272727	3	8
+NC_007175.2	266	267	27.272727	3	8
+NC_007175.2	332	333	50.000000	8	8
+```
+
+
+```
+head zb_20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.CpG_report.merged_CpG_evidence.cov
+NC_007175.2	48	50	75.000000	3	1
+NC_007175.2	50	52	100.000000	4	0
+NC_007175.2	87	89	100.000000	8	0
+NC_007175.2	146	148	80.000000	4	1
+NC_007175.2	192	194	57.142857	4	3
+NC_007175.2	245	247	40.000000	4	6
+NC_007175.2	256	258	25.000000	3	9
+NC_007175.2	263	265	27.272727	3	8
+NC_007175.2	265	267	27.272727	3	8
+NC_007175.2	331	333	50.000000	8	8
+```
+
+
+
+Lets have look at some reports
+
+```
+head  20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.CpG_report.txt
+NC_007175.2	49	+	1	1	CG	CGC
+NC_007175.2	50	-	2	0	CG	CGA
+NC_007175.2	51	+	2	0	CG	CGG
+NC_007175.2	52	-	2	0	CG	CGC
+NC_007175.2	88	+	4	0	CG	CGT
+NC_007175.2	89	-	4	0	CG	CGT
+NC_007175.2	147	+	2	0	CG	CGG
+NC_007175.2	148	-	2	1	CG	CGA
+NC_007175.2	193	+	4	2	CG	CGC
+NC_007175.2	194	-	0	1	CG	CGA
+```
+
+```
+head 20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.cytosine_context_summary.txt
+upstream	C-context	full context	count methylated	count unmethylated	percent methylation
+A	CAA	ACAA	400	519	43.53
+C	CAA	CCAA	328	515	38.91
+G	CAA	GCAA	169	261	39.30
+T	CAA	TCAA	460	691	39.97
+A	CAC	ACAC	180	243	42.55
+C	CAC	CCAC	149	300	33.18
+G	CAC	GCAC	77	179	30.08
+T	CAC	TCAC	199	402	33.11
+A	CAG	ACAG	2067	4183	33.07
+```
+
+
+Ok so now I am paranoid about removing `--count` in the extraction code. So lets revisit that.
+
+
+```
+head 20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.deduplicated.bismark.cov
+NC_007175.2	49	49	50	1	1
+NC_007175.2	50	50	100	2	0
+NC_007175.2	51	51	100	2	0
+NC_007175.2	52	52	100	2	0
+NC_007175.2	88	88	100	4	0
+NC_007175.2	89	89	100	4	0
+NC_007175.2	147	147	100	2	0
+NC_007175.2	148	148	66.6666666666667	2	1
+NC_007175.2	193	193	66.6666666666667	4	2
+NC_007175.2	194	194	0	0	1
+```
+
+
+```
+head 20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.CpG_report.merged_CpG_evidence.cov
+NC_007175.2	49	50	75.000000	3	1
+NC_007175.2	51	52	100.000000	4	0
+NC_007175.2	88	89	100.000000	8	0
+NC_007175.2	147	148	80.000000	4	1
+NC_007175.2	193	194	57.142857	4	3
+NC_007175.2	246	247	40.000000	4	6
+NC_007175.2	257	258	25.000000	3	9
+NC_007175.2	264	265	27.272727	3	8
+NC_007175.2	266	267	27.272727	3	8
+NC_007175.2	332	333	50.000000	8	8
+```
+
+
+```
+head zb_20150414_trimmed_2112_lane1_HB16_Oil_25000ppm_TTAGGC_bismark_bt2.CpG_report.merged_CpG_evidence.cov
+NC_007175.2	48	50	75.000000	3	1
+NC_007175.2	50	52	100.000000	4	0
+NC_007175.2	87	89	100.000000	8	0
+NC_007175.2	146	148	80.000000	4	1
+NC_007175.2	192	194	57.142857	4	3
+NC_007175.2	245	247	40.000000	4	6
+NC_007175.2	256	258	25.000000	3	9
+NC_007175.2	263	265	27.272727	3	8
+NC_007175.2	265	267	27.272727	3	8
+NC_007175.2	331	333	50.000000	8	8
 ```
