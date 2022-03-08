@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: quarter-shell
+name: Notes from the Underwater
 
 # Short bio or description (displayed in the header)
-description: The lab notebook of Steven Roberts
+description: The lab notebook of Larken Root
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars2.githubusercontent.com/u/4442039?v=3&s=460
+avatar: https://avatars.githubusercontent.com/u/60525206?s=400&u=59560ff1e74ecde55ae63ba22e7c83d642e239c2&v=4
 
 #
 # Flags below are optional
@@ -21,12 +21,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: sr320
+  github: larkenr
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: sr320
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -34,7 +34,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: https-sr320-github-io
+disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
@@ -47,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "https://github.com/larkenr/larkenr.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
