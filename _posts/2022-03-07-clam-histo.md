@@ -1,6 +1,6 @@
 ---
 layout: post
-title: clam collection and histology
+title: clam collection
 date: '2022-03-07'
 categories: Clam OA
 tags: 
