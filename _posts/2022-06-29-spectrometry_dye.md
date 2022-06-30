@@ -9,7 +9,7 @@ tags:
 ---
 Data collected from regular assessment of water pH using a spectrometer must be calibrated each time a new batch of dye is used. m-Cresol Purple dye alters the pH of a solution slightly, and since batches of dye may have slightly different concentrations, the effect of dye concentration on pH must be assessed. This is done by dosing samples twice with the same volume of dye (referred to as a double shot) and comparing the change between the first and second addition. After acquiring a sufficient number of double shot comparisons, approximately 20, data is filtered to eliminate spectrometer readings which do not meet two requirements. Firstly, readings variance in measurements at 730 nm should not exceed 0.01
 
-![](/images/dye calibration chart.jpg)
+![](/images/dye_calibration_chart.jpg)
 
 Here you can see that sample B12 had a change in 730 nm reading greater than 0.1, and so should be excluded.
 
