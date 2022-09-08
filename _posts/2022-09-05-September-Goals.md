@@ -8,4 +8,14 @@ tags:
 
 ---
 
+## ATPase ##
+*post about ATPase assay protocol
 https://larkenr.github.io/September-Goals/
+
+*finish ATPase assays and data analysis
+
+*prepare presentation and deliver at PCSGA
+
+*Plan for analysis of histology slides
+
+*Write outline of clam paper
