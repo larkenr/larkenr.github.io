@@ -9,9 +9,12 @@ tags:
 ---
 
 ## ATPase ##
+
 - [x] [Post about ATPase assay protocol](https://larkenr.github.io/ATPase-gill/)
 
 - [x] [Finish ATPase assays and data analysis](https://larkenr.github.io/ATPase-data/)
+
+## Other ##
 
 - [x] [Prepare presentation and deliver at PCSGA](https://github.com/larkenr/Clam-OA-project/blob/main/PCSGA%20sept%2022.pdf)
 
