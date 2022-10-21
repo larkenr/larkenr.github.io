@@ -17,7 +17,7 @@ Staging Manila and Littleneck clams based on histology requires a good rubric to
 | stage 1 |
 | none |
 | stage 2 |
-| [](https://owl.fish.washington.edu/hesperornis/Larken_clam/M-C-029_4x_a.jpg) | high density of eggs, but many appear to be immature |
+| ![](https://owl.fish.washington.edu/hesperornis/Larken_clam/M-C-029_4x_a.jpg) | high density of eggs, but many appear to be immature |
 | [](https://owl.fish.washington.edu/hesperornis/Larken_clam/L-C-112_4x_b.jpg) | many eggs, medium density, especially along the edge of folicle walls |
 | stage 3 |
 | [](https://owl.fish.washington.edu/hesperornis/Larken_clam/L-C-096_4x_b.jpg) | high density of eggs throughout |
