@@ -12,11 +12,11 @@ All September goals were comlepeted except the full development of a plan for ex
 
 ## Histology ##
 
-- [ ] Develop a plan for examining and staging histology slides
+- [x] Develop a plan for examining and staging histology slides
 
-- [ ] Stage histology using "subjective" method
+- [x] Stage histology using "subjective" method
 
-- [ ] Analyze clam maturation versus physiological measurements
+- [x] Analyze clam maturation versus physiological measurements
 
 ## Clam manuscript ##
 
@@ -26,6 +26,6 @@ All September goals were comlepeted except the full development of a plan for ex
 
 ## RNA ##
 
-- [ ] Prepare clam tissue samples for RNA analysis
+- [x] Prepare clam tissue samples for RNA analysis
 
 - [ ] Develop RNA extraction method for sperm
