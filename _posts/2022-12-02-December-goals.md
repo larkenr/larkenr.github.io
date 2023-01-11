@@ -12,22 +12,22 @@ Most October goals were comlepeted except for writing on the manuscript and any 
 
 ## Histology ##
 
-- [ ] Continue working with Dorothy on quantitative staging of clam histology
+- [x] Continue working with Dorothy on quantitative staging of clam histology
 
 ## Clam manuscript ##
 
-- [ ] Write detailed project status report
+- [x] Write detailed project status report
 
 - [ ] Complete alkalinity assays
 
-- [ ] Fill in data for enviromental parameters over the course of the experiment
+- [x] Fill in data for enviromental parameters over the course of the experiment
 
 ## RNA ##
 
-- [ ] Determine next steps for littleneck transcript library prep and future sequencing runs
+- [x] Determine next steps for littleneck transcript library prep and future sequencing runs
 
 ## Clam OA 2.0 ##
 
-- [ ] Design tank set-up and order necessary components
+- [x] Design tank set-up and order necessary components
 
 - [ ] Complete animal care and sampling timeline
